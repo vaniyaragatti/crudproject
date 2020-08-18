@@ -1,0 +1,36 @@
+<!-- <p>repository works!</p>
+<div *ngFor="let data of reposdata">
+  <p>{{data.archived}}</p>
+  <p>{{data.assignees_url}}</p>
+  <p>{{data.default_branch}}</p>
+</div> -->
+
+
+  
+
+<div class="container">
+  <div class="row">
+   
+    <table class="table table-striped">
+      <thead>
+      <tr>
+        <th>ID</th>
+        <th>Forks count</th>
+        <th>Git Url</th>
+        <th>Events Url</th>
+        <th>Archive Url</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr *ngFor="let data of reposdata" >
+        <td>{{data.id}}</td>
+        <td>{{data.forks_count}}</td>
+        <td>{{data.git_url}}</td>
+        <td>{{data.events_url}}</td>
+        <td>{{data.archive_url}}</td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
+<router-outlet></router-outlet>
