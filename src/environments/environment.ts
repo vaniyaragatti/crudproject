@@ -3,6 +3,8 @@
 // The list of file replacements can be found in `angular.json`.
 
 export const environment = {
+  // serverurl = "https://api.github.com/users",
+  Url:"https://api.github.com/users",
   production: false
 };
 
